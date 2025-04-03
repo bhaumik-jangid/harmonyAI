@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/chat-history/page": "/chat-history",
+  "/signin/page": "/signin",
+  "/chat/page": "/chat",
+  "/chat/[sessionid]/page": "/chat/[sessionid]",
+  "/page": "/"
+}

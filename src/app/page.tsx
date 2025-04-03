@@ -1,102 +1,72 @@
-import Image from "next/image";
+"use client";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen flex flex-col bg-gray-900">
+      {/* Header Section */} 
+      <header className="shadow-sm">
+        <nav>
+          <div className="grid grid-cols-2">
+            <div className="text-2xl m-3 font-semibold text-white">
+              <Link href="/">HARMONY</Link>
+            </div>
+            <div className="flex justify-end m-3">
+              <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600">
+                <Link href="/signin">Log in</Link>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* Main Content (Flexible to push footer down) */}
+      <main className="flex-1 flex flex-col justify-center items-center text-center px-6">
+        <h1 className="text-5xl text-white">Introducing HARMONY</h1>
+        <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center">
+          <span className="mr-2">
+            <Link href="/chat">Try Now</Link>
+          </span>
+          <svg
+            width="11"
+            style={{ transform: "translate(1px, -1px)" }}
+            viewBox="0 0 11 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <path
+              d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5"
+              stroke="currentColor"
+              strokeWidth="1.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          </svg>
+        </button>
+
+        {/* Description */}
+        <p className="max-w-screen-md mt-14 text-center text-gray-400">
+          Welcome to Stress Relief AI, your personal companion in managing stress and enhancing well-being.
+          Our intelligent chatbot offers tailored support, mindfulness exercises, and resources to help you navigate life&apos;s
+          challenges with ease and confidence. Experience a new way to cope with stress through engaging conversations that
+          feel personal and supportive. With 24/7 availability, you can access guidance and tools whenever you need them,
+          all in a safe and judgment-free environment. Let Stress Relief AI empower you to take charge of your mental health
+          and find peace in your daily life.
+        </p>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer (Sticks to Bottom) */}
+      <footer className="bg-gray-800 rounded-lg shadow-sm dark:bg-gray-800 w-full">
+        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2025 <Link href="/" className="hover:underline">Harmony™</Link>. All Rights Reserved.
+          </span>
+          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li><Link href="https://www.linkedin.com/in/bhaumik-jangid/" target="_blank" className="hover:underline me-4 md:me-6">Bhaumik (12320769)</Link></li>
+            <li><Link href="https://www.linkedin.com/in/ganeshkr0201/" target="_blank" className="hover:underline me-4 md:me-6">Ganesh (12317780)</Link></li>
+            <li><Link href="https://www.linkedin.com/in/rahulkala013/" target="_blank" className="hover:underline">Rahul (12307744)</Link></li>
+          </ul>
+        </div>
       </footer>
     </div>
   );
