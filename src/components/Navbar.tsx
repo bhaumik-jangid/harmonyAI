@@ -38,7 +38,7 @@ const Navbar = () => {
         throw new Error("Logout request failed");
       }
 
-      localStorage.removeItem("token"); // Clear stored token
+      // localStorage.removeItem("token");
       document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       router.push("/");
     } catch (error) {
