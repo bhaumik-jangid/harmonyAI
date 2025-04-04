@@ -121,6 +121,7 @@ function AuthForm() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success(isSignup ? "Signed up successfully!" : "Logged in successfully!", {
                     id: toastId
                 });
+                window.location.reload();
                 setTimeout(()=>{
                     router.replace("/chat");
                 }, 500);
@@ -141,7 +142,7 @@ function AuthForm() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
                 fileName: "[project]/src/app/signin/page.tsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -150,7 +151,7 @@ function AuthForm() {
                 children: "HarmonyAI"
             }, void 0, false, {
                 fileName: "[project]/src/app/signin/page.tsx",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -169,7 +170,7 @@ function AuthForm() {
                             children: isSignup ? "Sign Up" : "Log In"
                         }, void 0, false, {
                             fileName: "[project]/src/app/signin/page.tsx",
-                            lineNumber: 55,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -184,7 +185,7 @@ function AuthForm() {
                                     onChange: handleInputChange
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/signin/page.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 61,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -195,7 +196,7 @@ function AuthForm() {
                                     onChange: handleInputChange
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/signin/page.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -206,7 +207,7 @@ function AuthForm() {
                                     onChange: handleInputChange
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/signin/page.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 64,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -214,13 +215,13 @@ function AuthForm() {
                                     children: isSignup ? "Sign Up" : "Log In"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/signin/page.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/signin/page.tsx",
-                            lineNumber: 58,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -233,30 +234,30 @@ function AuthForm() {
                                     children: isSignup ? "Log In" : "Sign Up"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/signin/page.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/signin/page.tsx",
-                            lineNumber: 66,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/signin/page.tsx",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/signin/page.tsx",
-                lineNumber: 53,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/signin/page.tsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }

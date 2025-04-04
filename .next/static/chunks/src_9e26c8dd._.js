@@ -352,7 +352,7 @@ const Navbar = ()=>{
             if (!response.ok) {
                 throw new Error("Logout request failed");
             }
-            localStorage.removeItem("token"); // Clear stored token
+            // localStorage.removeItem("token");
             document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             router.push("/");
         } catch (error) {
@@ -508,7 +508,7 @@ const Navbar = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleLogout,
-                                    className: "mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700",
+                                    className: "mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 cursor-pointer",
                                     children: "Logout"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",

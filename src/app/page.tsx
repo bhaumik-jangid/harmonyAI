@@ -23,26 +23,27 @@ export default function Home() {
       {/* Main Content (Flexible to push footer down) */}
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6">
         <h1 className="text-5xl text-white">Introducing HARMONY</h1>
-        <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center">
-          <span className="mr-2">
-            <Link href="/chat">Try Now</Link>
-          </span>
-          <svg
-            width="11"
-            style={{ transform: "translate(1px, -1px)" }}
-            viewBox="0 0 11 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5"
-              stroke="currentColor"
-              strokeWidth="1.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+        <Link href="/signin" className="cursor-pointer">
+          <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center cursor-pointer">
+            <span className="mr-2">Try Now</span>
+            <svg
+              width="11"
+              style={{ transform: "translate(1px, -1px)" }}
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="cursor-pointer"
+            >
+              <path
+                d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </Link>
 
         {/* Description */}
         <p className="max-w-screen-md mt-14 text-center text-gray-400">

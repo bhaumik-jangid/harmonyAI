@@ -87,50 +87,52 @@ function Home() {
                         lineNumber: 25,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "mr-2",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/chat",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/signin",
+                        className: "cursor-pointer",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center cursor-pointer",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "mr-2",
                                     children: "Try Now"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 28,
                                     columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 27,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                width: "11",
-                                style: {
-                                    transform: "translate(1px, -1px)"
-                                },
-                                viewBox: "0 0 11 12",
-                                fill: "none",
-                                xmlns: "http://www.w3.org/2000/svg",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5",
-                                    stroke: "currentColor",
-                                    strokeWidth: "1.3",
-                                    strokeLinecap: "round",
-                                    strokeLinejoin: "round"
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    width: "11",
+                                    style: {
+                                        transform: "translate(1px, -1px)"
+                                    },
+                                    viewBox: "0 0 11 12",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    className: "cursor-pointer",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5",
+                                        stroke: "currentColor",
+                                        strokeWidth: "1.3",
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 30,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 27,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
                         lineNumber: 26,
                         columnNumber: 9
@@ -140,7 +142,7 @@ function Home() {
                         children: "Welcome to Stress Relief AI, your personal companion in managing stress and enhancing well-being. Our intelligent chatbot offers tailored support, mindfulness exercises, and resources to help you navigate life's challenges with ease and confidence. Experience a new way to cope with stress through engaging conversations that feel personal and supportive. With 24/7 availability, you can access guidance and tools whenever you need them, all in a safe and judgment-free environment. Let Stress Relief AI empower you to take charge of your mental health and find peace in your daily life."
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 48,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this)
                 ]
@@ -164,14 +166,14 @@ function Home() {
                                     children: "Harmony™"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 63,
                                     columnNumber: 20
                                 }, this),
                                 ". All Rights Reserved."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 61,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -185,22 +187,6 @@ function Home() {
                                         children: "Bhaumik (12320769)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
-                                        lineNumber: 65,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 65,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://www.linkedin.com/in/ganeshkr0201/",
-                                        target: "_blank",
-                                        className: "hover:underline me-4 md:me-6",
-                                        children: "Ganesh (12317780)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/page.tsx",
                                         lineNumber: 66,
                                         columnNumber: 17
                                     }, this)
@@ -211,10 +197,10 @@ function Home() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://www.linkedin.com/in/rahulkala013/",
+                                        href: "https://www.linkedin.com/in/ganeshkr0201/",
                                         target: "_blank",
-                                        className: "hover:underline",
-                                        children: "Rahul (12307744)"
+                                        className: "hover:underline me-4 md:me-6",
+                                        children: "Ganesh (12317780)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
                                         lineNumber: 67,
@@ -224,22 +210,38 @@ function Home() {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 67,
                                     columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "https://www.linkedin.com/in/rahulkala013/",
+                                        target: "_blank",
+                                        className: "hover:underline",
+                                        children: "Rahul (12307744)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 68,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/page.tsx",
+                                    lineNumber: 68,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 60,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]

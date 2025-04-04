@@ -35,6 +35,7 @@ export default function AuthForm() {
       if (res.data.sucess) {
         Cookies.set("token", res.data.token, { expires: 1, secure: true, sameSite: "Lax" }); 
         toast.success(isSignup ? "Signed up successfully!" : "Logged in successfully!", { id: toastId });
+        window.location.reload();
         setTimeout(() => {router.replace("/chat");}, 500);
 
       } else {
