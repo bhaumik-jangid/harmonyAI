@@ -33,10 +33,10 @@ export default function AuthForm() {
       const res = await axios.post(url, payload);
 
       if (res.data.sucess) {
-        Cookies.set("token", res.data.token, { expires: 1, secure: true });
+        Cookies.set("token", res.data.token, { expires: 1, secure: true, sameSite: "Lax" }); 
         toast.success(isSignup ? "Signed up successfully!" : "Logged in successfully!", { id: toastId });
+        setTimeout(() => {router.replace("/chat");}, 500);
 
-        setTimeout(() => router.push("/chat"), 500);
       } else {
         toast.error(res.data.error || "Authentication failed. Please try again.", { id: toastId });
       }

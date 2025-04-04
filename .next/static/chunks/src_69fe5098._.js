@@ -115,12 +115,15 @@ function AuthForm() {
             if (res.data.sucess) {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$js$2d$cookie$2f$dist$2f$js$2e$cookie$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].set("token", res.data.token, {
                     expires: 1,
-                    secure: true
+                    secure: true,
+                    sameSite: "Lax"
                 });
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success(isSignup ? "Signed up successfully!" : "Logged in successfully!", {
                     id: toastId
                 });
-                setTimeout(()=>router.push("/chat"), 500);
+                setTimeout(()=>{
+                    router.replace("/chat");
+                }, 500);
             } else {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error(res.data.error || "Authentication failed. Please try again.", {
                     id: toastId

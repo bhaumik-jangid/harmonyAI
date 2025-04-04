@@ -67,6 +67,13 @@ const ChatPage = () => {
 
       const data = await response.json();
       setMessages((prev) => [...prev.slice(0, -1), { text: data.aiMessage, user: "ai" }]);
+      localStorage.setItem(
+        "initialChat",
+        JSON.stringify([
+          { text: inputText, user: "me" },
+          { text: data.aiMessage , user: "ai" }
+        ])
+      );
       router.replace(`/chat/${newSessionId}`);
     } catch (error) {
       if (error instanceof Error && error.name === "AbortError") {
@@ -115,7 +122,7 @@ const ChatPage = () => {
         {paused && <div className="text-center text-yellow-400 text-sm mb-2">AI response paused.</div>}
 
         <div className="fixed bottom-0 left-0 right-0 z-10 flex flex-col items-center gap-2 border-t pt-3">
-          <div className="flex flex-row gap-2 mb-4 w-full sm:w-[60%] mx-auto">
+          <div className="flex flex-row gap-2 mb-4 w-full sm:w-[60%] mx-auto px-1">
             <input
               ref={inputRef}
               className="flex-1 p-3 border border-gray-300 rounded-xl text-sm max-w-[80%]"

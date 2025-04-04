@@ -37,11 +37,26 @@ const ChatPage = () => {
 
   // Fetch chat history when sessionId is available
   useEffect(() => {
-    if (!sessionId || !userId) return;
-
+    const initialChat = localStorage.getItem("initialChat");
+    let parsedInitial: { text: string; user: "me" | "ai" }[] = [];
+  
+    if (initialChat) {
+      try {
+        parsedInitial = JSON.parse(initialChat);
+        setMessages(parsedInitial); 
+        localStorage.removeItem("initialChat");
+      } catch (err) {
+        console.error("Error parsing initialChat", err);
+      }
+    }
+  
+    if (!sessionId || !userId || parsedInitial.length > 0) return;
+  
     const fetchChatHistory = async () => {
       try {
-        const response = await fetch(`https://medgurubackend.onrender.com/api/chat/history/${userId}/${sessionId}`);
+        const response = await fetch(
+          `https://medgurubackend.onrender.com/api/chat/history/${userId}/${sessionId}`
+        );
         const data = await response.json();
         if (data.success && data.history.length > 0 && data.history[0].messages.length > 0) {
           setMessages(data.history[0].messages);
@@ -50,9 +65,9 @@ const ChatPage = () => {
         console.error("Error fetching chat history:", error);
       }
     };
-
+  
     fetchChatHistory();
-  }, [sessionId, userId]);
+  }, [sessionId, userId]);  
 
   // Auto-scroll when messages update
   useEffect(() => {
@@ -137,7 +152,7 @@ const ChatPage = () => {
 
         {/* Input & Buttons */}
         <div className="fixed bottom-0 left-0 right-0 z-10 flex flex-col items-center gap-2 border-t pt-3">
-          <div className="flex flex-row gap-2 mb-4 w-full sm:w-[60%] mx-auto">
+          <div className="flex flex-row gap-2 mb-4 w-full sm:w-[60%] mx-auto px-1">
             <input
               ref={inputRef}
               className="flex-1 p-3 border border-gray-300 rounded-xl text-sm max-w-[80%]"

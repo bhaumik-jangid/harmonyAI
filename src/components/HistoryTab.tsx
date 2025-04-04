@@ -35,7 +35,7 @@ const HistoryTab: React.FC<HistoryTabProps> = ({ utc, userid, sessionid, userPro
       );
 
       if (!response.ok) throw new Error("Failed to delete session");
-
+      window.location.reload();
       toast.success("Session deleted successfully!", { id: toastId });
 
     } catch (error) {
@@ -48,10 +48,9 @@ const HistoryTab: React.FC<HistoryTabProps> = ({ utc, userid, sessionid, userPro
 
   return (
     <div
-      className="p-4 bg-gray-700 text-white rounded-lg cursor-pointer hover:bg-gray-600 transition-transform transform duration-300 ease-in-out active:scale-95 max-w-[60vw] mx-auto shadow-lg flex justify-between items-center"
-      onClick={() => router.push(`/chat/${sessionid}`)}
+      className="p-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-transform transform duration-300 ease-in-out active:scale-95 max-w-[60vw] mx-auto shadow-lg flex justify-between items-center"
     >
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full cursor-pointer" onClick={() => router.push(`/chat/${sessionid}`)}>
         <p className="text-xs text-gray-400">{formatDate(utc)}</p>
         <p className="font-bold truncate">{userPrompt}</p>
         <p className="text-gray-300 line-clamp-2">{aiResponse}</p>
@@ -60,12 +59,14 @@ const HistoryTab: React.FC<HistoryTabProps> = ({ utc, userid, sessionid, userPro
       {/* Delete Button */}
       <button
         onClick={handleDelete}
-        className="hidden lg:flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors ml-4 p-2 rounded-full focus:outline-none"
+        className="hidden lg:flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors ml-4 p-2 rounded-full focus:outline-none cursor-pointer"
         disabled={isDeleting}
+        title="Delete session"
       >
         {isDeleting ? "⏳" : "🗑️"}
       </button>
     </div>
+
   );
 };
 
