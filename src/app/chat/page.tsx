@@ -102,7 +102,25 @@ const ChatPage = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen w-screen bg-[url('/chatbgImage-sm.webp')] sm:bg-[url('/chatbgImage.webp')] bg-cover bg-no-repeat sm:bg-center py-[60px]">
+      <div className="h-screen w-screen bg-[url('/bgImage-sm.webp')] sm:bg-[url('/bgImage.webp')] bg-cover bg-no-repeat sm:bg-center py-[60px]">
+
+        {/* Mirrored Image Below */}
+        <div className="fixed right-[-10rem] sm:right-[-19rem] z-0 pointer-events-none top-0 md:top-1/2 md:translate-y-[-50%] hidden sm:block">
+          <img
+            src="/AIPersona.webp"
+            alt="Mirrored Image"
+            className="
+              h-[50vh]         
+              sm:h-[70vh]      
+              md:h-[80vh]      
+              scale-x-[-1]
+              opacity-80
+              rotate-[10deg]
+              object-contain
+            "
+          />
+        </div>
+
         <div
           className={`flex-1 flex flex-col gap-2 w-full sm:w-[60%] mx-auto transition-all duration-500 ${
             messages.length === 0

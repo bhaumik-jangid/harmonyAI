@@ -812,16 +812,8 @@
     background-color: #0000;
   }
 
-  .bg-\[url\(\'\/bgImage-sm\.jpg\'\)\] {
-    background-image: url("/bgImage-sm.jpg");
-  }
-
   .bg-\[url\(\'\/bgImage-sm\.webp\'\)\] {
     background-image: url("/bgImage-sm.webp");
-  }
-
-  .bg-\[url\(\'\/chatbgImage-sm\.jpg\'\)\] {
-    background-image: url("/chatbgImage-sm.jpg");
   }
 
   .bg-\[url\(\'\/chatbgImage-sm\.webp\'\)\] {
@@ -1440,20 +1432,8 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:bg-\[url\(\'\/bgImage\.jpg\'\)\] {
-      background-image: url("/bgImage.jpg");
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:bg-\[url\(\'\/bgImage\.webp\'\)\] {
       background-image: url("/bgImage.webp");
-    }
-  }
-
-  @media (width >= 40rem) {
-    .sm\:bg-\[url\(\'\/chatbgImage\.jpg\'\)\] {
-      background-image: url("/chatbgImage.jpg");
     }
   }
 

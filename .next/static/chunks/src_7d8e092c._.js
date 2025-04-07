@@ -747,95 +747,113 @@ const ChatPage = ()=>{
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "h-screen w-screen bg-fixed bg-cover bg-no-repeat bg-[url('/chatbgImage-sm.jpg')] sm:bg-[url('/chatbgImage.jpg')] bg-center",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col justify-between h-full",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex-1 flex flex-col gap-2 overflow-auto hide-scrollbar w-full sm:w-[60%] mx-auto pt-[60px]",
-                            children: [
-                                messages.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center justify-center h-full text-gray-500 text-3xl font-bold",
-                                    children: "What can I help with?"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                    lineNumber: 140,
-                                    columnNumber: 13
-                                }, this) : messages.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ChatBox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        text: message.text,
-                                        user: message.user
-                                    }, index, false, {
-                                        fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                        lineNumber: 145,
-                                        columnNumber: 15
-                                    }, this)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    ref: messagesEndRef
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                    lineNumber: 148,
-                                    columnNumber: 11
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                            lineNumber: 138,
-                            columnNumber: 9
-                        }, this),
-                        paused && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center text-yellow-400 text-sm mb-2",
-                            children: "AI response paused."
+                className: "h-screen w-screen bg-fixed bg-cover bg-no-repeat bg-[url('/bgImage-sm.webp')] sm:bg-[url('/bgImage.webp')] bg-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "fixed right-[-10rem] sm:right-[-19rem] z-0 pointer-events-none top-0 md:top-1/2 md:translate-y-[-50%] hidden sm:block",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: "/AIPersona.webp",
+                            alt: "Mirrored Image",
+                            className: "   h-[50vh]            sm:h-[70vh]         md:h-[80vh]         scale-x-[-1]   opacity-80   rotate-[10deg]   object-contain   "
                         }, void 0, false, {
                             fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                            lineNumber: 152,
+                            lineNumber: 138,
                             columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col items-center gap-2 bg-transparent pb-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-row gap-2 w-full sm:w-[60%] mx-auto justify-evenly px-3",
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                        lineNumber: 137,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col justify-between h-full",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex-1 flex flex-col gap-2 overflow-auto hide-scrollbar w-full sm:w-[60%] mx-auto pt-[60px]",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        ref: inputRef,
-                                        className: "flex-1 p-3 border border-gray-300 text-white rounded-xl text-sm max-w-[80%] bg-[#243664] outline-none font-julius",
-                                        type: "text",
-                                        value: inputText,
-                                        onChange: (e)=>setInputText(e.target.value),
-                                        onKeyDown: (e)=>e.key === "Enter" && !loading && handleSendMessage(),
-                                        placeholder: "Type a message",
-                                        disabled: loading
+                                    messages.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-center h-full text-gray-500 text-3xl font-bold",
+                                        children: "What can I help with?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 158,
                                         columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: `p-3 rounded-xl text-sm w-24 font-julius border ${loading ? "bg-red-600 text-white" : "bg-[#14190E] text-white"}`,
-                                        onClick: handleSendMessage,
-                                        children: loading ? "Pause" : "Send"
+                                    }, this) : messages.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ChatBox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            text: message.text,
+                                            user: message.user
+                                        }, index, false, {
+                                            fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                            lineNumber: 163,
+                                            columnNumber: 15
+                                        }, this)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        ref: messagesEndRef
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                        lineNumber: 170,
-                                        columnNumber: 13
+                                        lineNumber: 166,
+                                        columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                                lineNumber: 159,
+                                lineNumber: 156,
+                                columnNumber: 9
+                            }, this),
+                            paused && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-center text-yellow-400 text-sm mb-2",
+                                children: "AI response paused."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                lineNumber: 170,
                                 columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col items-center gap-2 bg-transparent pb-4",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-row gap-2 w-full sm:w-[60%] mx-auto justify-evenly px-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            ref: inputRef,
+                                            className: "flex-1 p-3 border border-gray-300 text-white rounded-xl text-sm max-w-[80%] bg-[#243664] outline-none font-julius",
+                                            type: "text",
+                                            value: inputText,
+                                            onChange: (e)=>setInputText(e.target.value),
+                                            onKeyDown: (e)=>e.key === "Enter" && !loading && handleSendMessage(),
+                                            placeholder: "Type a message",
+                                            disabled: loading
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                            lineNumber: 178,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: `p-3 rounded-xl text-sm w-24 font-julius border ${loading ? "bg-red-600 text-white" : "bg-[#14190E] text-white"}`,
+                                            onClick: handleSendMessage,
+                                            children: loading ? "Pause" : "Send"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                            lineNumber: 188,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                    lineNumber: 177,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                                lineNumber: 176,
+                                columnNumber: 9
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                            lineNumber: 158,
-                            columnNumber: 9
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
-                    lineNumber: 136,
-                    columnNumber: 7
-                }, this)
-            }, void 0, false, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
+                        lineNumber: 154,
+                        columnNumber: 7
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/chat/[sessionid]/page.tsx",
                 lineNumber: 134,
                 columnNumber: 5
