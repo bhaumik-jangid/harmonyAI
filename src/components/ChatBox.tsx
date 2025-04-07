@@ -13,12 +13,14 @@ const Chatbox: React.FC<ChatboxProps> = ({ text, user }) => {
   return (
     <div
       className={`p-3 rounded-xl font-julius my-2 break-words w-fit max-w-[80%] h-auto 
-        ${user === "me" ? "bg-[#14190E] text-white self-end" : "bg-[#0e1526] text-white self-start"} 
-        ${isGenerating ? "animate-pulse text-gray-500" : ""}`}
+        ${user === "me" ? "bg-[#14190E] text-white self-end" : "bg-[#0e1526] text-white self-start"}`}
       style={{ whiteSpace: "pre-wrap", overflowWrap: "break-word" }}
     >
-      {/* Render Markdown-formatted text */}
-      <ReactMarkdown>{text}</ReactMarkdown>
+      {isGenerating ? (
+        <span className="animate-pulse text-gray-400">{text}</span>
+      ) : (
+        <ReactMarkdown>{text}</ReactMarkdown>
+      )}
     </div>
   );
 };

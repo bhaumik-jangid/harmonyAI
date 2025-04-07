@@ -6,7 +6,7 @@
 
 /* globals.css */
 .bg-harmony {
-  background-image: url('/bgImage.jpg');
+  background-image: url('/bgImage.webp');
   background-size: cover;
   background-position: center;
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 bg-[url('/bgImage-sm.jpg')] sm:bg-[url('/bgImage.jpg')] bg-cover bg-no-repeat sm:bg-center">
+    <div className="min-h-screen flex flex-col bg-gray-900 bg-[url('/bgImage-sm.webp')] sm:bg-[url('/bgImage.webp')] bg-cover bg-no-repeat sm:bg-center">
       {/* Header Section */} 
       <header className="shadow-sm mx-2 mt-2">
         <nav>
@@ -54,7 +54,7 @@ export default function Home() {
         {/* Mirrored Image Below */}
         <div className="fixed right-[-10rem] sm:right-[-19rem] z-0 pointer-events-none top-0 md:top-1/2 md:translate-y-[-50%] hidden sm:block">
           <img
-            src="/AIPersona.png"
+            src="/AIPersona.webp"
             alt="Mirrored Image"
             className="
               h-[50vh]         

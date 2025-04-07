@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import axios from "axios";
 import Cookies from "js-cookie";
 import Button from "@/components/Button";
@@ -51,7 +51,6 @@ export default function AuthForm() {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4 sm:px-6 md:px-8 bg-harmony">
-      <Toaster />
       <header className="shadow-sm fixed top-0">
         <nav>
             <div className="text-3xl p-5 font-semibold font-koulen text-white text-harmony flex items-start w-screen">

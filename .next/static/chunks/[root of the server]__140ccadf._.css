@@ -816,8 +816,16 @@
     background-image: url("/bgImage-sm.jpg");
   }
 
+  .bg-\[url\(\'\/bgImage-sm\.webp\'\)\] {
+    background-image: url("/bgImage-sm.webp");
+  }
+
   .bg-\[url\(\'\/chatbgImage-sm\.jpg\'\)\] {
     background-image: url("/chatbgImage-sm.jpg");
+  }
+
+  .bg-\[url\(\'\/chatbgImage-sm\.webp\'\)\] {
+    background-image: url("/chatbgImage-sm.webp");
   }
 
   .bg-cover {
@@ -1438,8 +1446,20 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:bg-\[url\(\'\/bgImage\.webp\'\)\] {
+      background-image: url("/bgImage.webp");
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:bg-\[url\(\'\/chatbgImage\.jpg\'\)\] {
       background-image: url("/chatbgImage.jpg");
+    }
+  }
+
+  @media (width >= 40rem) {
+    .sm\:bg-\[url\(\'\/chatbgImage\.webp\'\)\] {
+      background-image: url("/chatbgImage.webp");
     }
   }
 
@@ -1610,7 +1630,7 @@
 }
 
 .bg-harmony {
-  background-image: url("/bgImage.jpg");
+  background-image: url("/bgImage.webp");
   background-size: cover;
   background-position: center;
 }

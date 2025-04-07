@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import DataFromJWT from "@/utils/DataFromJWT";
 import { MessageCircle, History, UserCircle } from "lucide-react";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,23 +29,28 @@ const Navbar = () => {
   };
 
   const handleLogout = async () => {
+    const toastId = toast.loading("Logging out...");
+  
     try {
       const response = await fetch("https://medgurubackend.onrender.com/api/user/logout", {
         method: "GET",
-        credentials: "include", // Ensure cookies are sent
+        credentials: "include",
       });
-
+  
       if (!response.ok) {
         throw new Error("Logout request failed");
       }
-
-      // localStorage.removeItem("token");
+  
       document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      toast.success("Logged out successfully!", { id: toastId });
+  
       router.push("/");
     } catch (error) {
+      toast.error("Logout failed", { id: toastId });
       console.error("Logout failed", error);
     }
   };
+  
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-4 bg-gray-900 bg-opacity-40 lg:bg-transparent">

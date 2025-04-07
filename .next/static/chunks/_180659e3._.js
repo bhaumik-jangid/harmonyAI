@@ -15,7 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen flex flex-col bg-gray-900 bg-[url('/bgImage-sm.jpg')] sm:bg-[url('/bgImage.jpg')] bg-cover bg-no-repeat sm:bg-center",
+        className: "min-h-screen flex flex-col bg-gray-900 bg-[url('/bgImage-sm.webp')] sm:bg-[url('/bgImage.webp')] bg-cover bg-no-repeat sm:bg-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 className: "shadow-sm mx-2 mt-2",
@@ -156,7 +156,7 @@ function Home() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "fixed right-[-10rem] sm:right-[-19rem] z-0 pointer-events-none top-0 md:top-1/2 md:translate-y-[-50%] hidden sm:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/AIPersona.png",
+                            src: "/AIPersona.webp",
                             alt: "Mirrored Image",
                             className: " h-[50vh]          sm:h-[70vh]       md:h-[80vh]       scale-x-[-1] opacity-80 rotate-[10deg] object-contain "
                         }, void 0, false, {

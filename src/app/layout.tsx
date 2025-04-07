@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import KeepAlive from "@/components/KeepAlive";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "harmony AI",
+  title: "Harmony AI",
   description: "AI stress relief GURU created using gemini API",
 };
 
@@ -28,6 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Toaster
+          toastOptions={{
+            className: "font-julius text-sm"
+          }}
+        />
         <KeepAlive />
         {children}
       </body>

@@ -102,7 +102,7 @@ const ChatPage = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen w-screen bg-[url('/chatbgImage-sm.jpg')] sm:bg-[url('/chatbgImage.jpg')] bg-cover bg-no-repeat sm:bg-center py-[60px]">
+      <div className="h-screen w-screen bg-[url('/chatbgImage-sm.webp')] sm:bg-[url('/chatbgImage.webp')] bg-cover bg-no-repeat sm:bg-center py-[60px]">
         <div
           className={`flex-1 flex flex-col gap-2 w-full sm:w-[60%] mx-auto transition-all duration-500 ${
             messages.length === 0
