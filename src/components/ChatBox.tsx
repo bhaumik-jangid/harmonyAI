@@ -12,8 +12,8 @@ const Chatbox: React.FC<ChatboxProps> = ({ text, user }) => {
 
   return (
     <div
-      className={`p-3 rounded-xl my-2 break-words w-fit max-w-[80%] h-auto 
-        ${user === "me" ? "bg-[#14190E] text-white self-end" : "bg-gray-300 text-black self-start"} 
+      className={`p-3 rounded-xl font-julius my-2 break-words w-fit max-w-[80%] h-auto 
+        ${user === "me" ? "bg-[#14190E] text-white self-end" : "bg-[#0e1526] text-white self-start"} 
         ${isGenerating ? "animate-pulse text-gray-500" : ""}`}
       style={{ whiteSpace: "pre-wrap", overflowWrap: "break-word" }}
     >

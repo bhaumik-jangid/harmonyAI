@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Julius+Sans+One&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+@tailwind utilities;
+
+/* globals.css */
+.bg-harmony {
+  background-image: url('/bgImage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.chat-bg-harmony {
+  background-image: url('/chatbgImage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.chat-bg-harmony-sm {
+  background-image: url('/chatbgImage-sm.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-harmony-sm {
+  background-image: url('/bgImage-sm.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.font-koulen {
+  font-family: 'Koulen', sans-serif;
+}
+body {
+  font-family: 'Koulen', sans-serif;
+}
+.font-julius {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.font-indie {
+  font-family: 'Indie Flower', cursive;
+}
+
+.text-harmony {
+  color: #FFB4C4;
+}
+
+.text-harmony:hover {
+  color: #E190A4; /* darker version */
+}
 
 @custom-variant dark (&:is(.dark *));
 

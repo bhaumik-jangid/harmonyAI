@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-900 bg-[url('/bgImage-sm.jpg')] sm:bg-[url('/bgImage.jpg')] bg-cover bg-no-repeat sm:bg-center">
       {/* Header Section */} 
-      <header className="shadow-sm">
+      <header className="shadow-sm mx-2 mt-2">
         <nav>
           <div className="grid grid-cols-2">
-            <div className="text-2xl m-3 font-semibold text-white">
+            <div className="text-3xl m-3 font-semibold text-white text-harmony">
               <Link href="/">HARMONY</Link>
             </div>
             <div className="flex justify-end m-3">
-              <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600">
+              <button className="bg-[#FFB4C4] text-black py-1 px-4 text-xl rounded-2xl hover:bg-[#fba8bb]">
                 <Link href="/signin">Log in</Link>
               </button>
             </div>
@@ -20,19 +20,25 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Main Content (Flexible to push footer down) */}
       <main className="flex-1 flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-5xl text-white">Introducing HARMONY</h1>
+        <h1 className="text-5xl sm:text-7xl text-harmony">HARMONY</h1>
+
+        {/* Description */}
+        <p className="max-w-screen-md mb-10 mt-4 text-white text-xl sm:text-2xl font-julius">
+          WELCOME TO <br /> STRESS RELIEF AI
+        </p>
+
+        {/* Try Now Button */}
         <Link href="/signin" className="cursor-pointer">
-          <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 mt-6 inline-flex items-center cursor-pointer">
-            <span className="mr-2">Try Now</span>
+          <button className="bg-gray-700 text-white py-2 px-4 rounded-3xl hover:bg-gray-600 m-1 inline-flex items-center cursor-pointer">
+            <span className="mr-2 text-harmony text-xl sm:text-2xl font-indie">Try Now</span>
             <svg
               width="11"
               style={{ transform: "translate(1px, -1px)" }}
               viewBox="0 0 11 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="cursor-pointer"
+              className="cursor-pointer text-harmony"
             >
               <path
                 d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5"
@@ -45,15 +51,22 @@ export default function Home() {
           </button>
         </Link>
 
-        {/* Description */}
-        <p className="max-w-screen-md mt-14 text-center text-gray-400">
-          Welcome to Stress Relief AI, your personal companion in managing stress and enhancing well-being.
-          Our intelligent chatbot offers tailored support, mindfulness exercises, and resources to help you navigate life&apos;s
-          challenges with ease and confidence. Experience a new way to cope with stress through engaging conversations that
-          feel personal and supportive. With 24/7 availability, you can access guidance and tools whenever you need them,
-          all in a safe and judgment-free environment. Let Stress Relief AI empower you to take charge of your mental health
-          and find peace in your daily life.
-        </p>
+        {/* Mirrored Image Below */}
+        <div className="fixed right-[-10rem] sm:right-[-19rem] z-0 pointer-events-none top-0 md:top-1/2 md:translate-y-[-50%] hidden sm:block">
+          <img
+            src="/AIPersona.png"
+            alt="Mirrored Image"
+            className="
+              h-[50vh]         
+              sm:h-[70vh]      
+              md:h-[80vh]      
+              scale-x-[-1]
+              opacity-80
+              rotate-[10deg]
+              object-contain
+            "
+          />
+        </div>
       </main>
 
       {/* Footer (Sticks to Bottom) */}

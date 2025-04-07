@@ -9,7 +9,7 @@ const ChatPage = () => {
   const pathname = usePathname();
   const sessionId = pathname.split("/chat/")[1] || null;
   const [userId, setUserId] = useState<string | null>(null);
-  const inputRef = useRef<HTMLInputElement | null>(null); 
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const [messages, setMessages] = useState<{ text: string; user: "me" | "ai" }[]>([]);
   const [inputText, setInputText] = useState("");
@@ -39,19 +39,19 @@ const ChatPage = () => {
   useEffect(() => {
     const initialChat = localStorage.getItem("initialChat");
     let parsedInitial: { text: string; user: "me" | "ai" }[] = [];
-  
+
     if (initialChat) {
       try {
         parsedInitial = JSON.parse(initialChat);
-        setMessages(parsedInitial); 
+        setMessages(parsedInitial);
         localStorage.removeItem("initialChat");
       } catch (err) {
         console.error("Error parsing initialChat", err);
       }
     }
-  
+
     if (!sessionId || !userId || parsedInitial.length > 0) return;
-  
+
     const fetchChatHistory = async () => {
       try {
         const response = await fetch(
@@ -65,9 +65,9 @@ const ChatPage = () => {
         console.error("Error fetching chat history:", error);
       }
     };
-  
+
     fetchChatHistory();
-  }, [sessionId, userId]);  
+  }, [sessionId, userId]);
 
   // Auto-scroll when messages update
   useEffect(() => {
@@ -82,12 +82,16 @@ const ChatPage = () => {
 
     if (inputText.trim() && userId) {
       setLoading(true);
+
+      const userInput = inputText;
+      setInputText("");
+
       setPaused(false);
       const newController = new AbortController();
       setController(newController);
 
       // Append user message & placeholder AI message
-      setMessages((prev) => [...prev, { text: inputText, user: "me" }, { text: "Generating response...", user: "ai" }]);
+      setMessages((prev) => [...prev, { text: userInput, user: "me" }, { text: "Generating response...", user: "ai" }]);
 
       try {
         const response = await fetch(
@@ -95,7 +99,7 @@ const ChatPage = () => {
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userMessage: inputText }),
+            body: JSON.stringify({ userMessage: userInput }),
             signal: newController.signal,
           }
         );
@@ -112,7 +116,6 @@ const ChatPage = () => {
         }
       } finally {
         setLoading(false);
-        setInputText("");
       }
     }
   };
@@ -127,10 +130,12 @@ const ChatPage = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="flex flex-col h-screen w-screen p-5 bg-gray-900 text-red-200 py-[60px]">
-        {/* Chat Container */}
-        <div className="flex-1 flex flex-col gap-2 overflow-auto hide-scrollbar mb-4 w-full sm:w-[60%] mx-auto">
+    <Navbar />
+    <div className="h-screen w-screen bg-fixed bg-cover bg-no-repeat bg-[url('/chatbgImage-sm.jpg')] sm:bg-[url('/chatbgImage.jpg')] bg-center">
+      {/* Main layout */}
+      <div className="flex flex-col justify-between h-full">
+        {/* Chat messages */}
+        <div className="flex-1 flex flex-col gap-2 overflow-auto hide-scrollbar w-full sm:w-[60%] mx-auto pt-[60px]">
           {messages.length === 0 ? (
             <div className="flex items-center justify-center h-full text-gray-500 text-3xl font-bold">
               What can I help with?
@@ -143,19 +148,18 @@ const ChatPage = () => {
           <div ref={messagesEndRef}></div>
         </div>
 
-        {/* PAUSED Indicator */}
         {paused && (
           <div className="text-center text-yellow-400 text-sm mb-2">
             AI response paused.
           </div>
         )}
 
-        {/* Input & Buttons */}
-        <div className="fixed bottom-0 left-0 right-0 z-10 flex flex-col items-center gap-2 border-t pt-3">
-          <div className="flex flex-row gap-2 mb-4 w-full sm:w-[60%] mx-auto px-1">
+        {/* Input */}
+        <div className="flex flex-col items-center gap-2 bg-transparent pb-4">
+          <div className="flex flex-row gap-2 w-full sm:w-[60%] mx-auto justify-evenly px-3">
             <input
               ref={inputRef}
-              className="flex-1 p-3 border border-gray-300 rounded-xl text-sm max-w-[80%]"
+              className="flex-1 p-3 border border-gray-300 text-white rounded-xl text-sm max-w-[80%] bg-[#243664] outline-none font-julius"
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
@@ -164,7 +168,7 @@ const ChatPage = () => {
               disabled={loading}
             />
             <button
-              className={`p-3 rounded-xl text-sm w-24 ${loading ? "bg-red-600" : "bg-[#14190E] text-white"}`}
+              className={`p-3 rounded-xl text-sm w-24 font-julius border ${loading ? "bg-red-600 text-white" : "bg-[#14190E] text-white"}`}
               onClick={handleSendMessage}
             >
               {loading ? "Pause" : "Send"}
@@ -172,7 +176,8 @@ const ChatPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
+  </>
   );
 };
 

@@ -65,7 +65,7 @@ const ChatHistoryPage = () => {
 
 
   return (
-    <div className="flex flex-col h-auto min-h-[100vh] bg-gray-900 text-white pt-[60px]">
+    <div className="flex flex-col min-h-screen bg-harmony bg-fixed bg-cover bg-no-repeat text-white pt-[60px] font-julius">
       <Navbar />
       <div className="flex flex-1 items-center justify-center px-6 sm:px-10 py-10">
         <div className="w-full max-w-4xl space-y-6">

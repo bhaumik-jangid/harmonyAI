@@ -47,25 +47,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-4 text-white bg-gray-900 bg-opacity-40 lg:bg-transparent">
-      <div className="text-2xl font-semibold">
+    <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-4 bg-gray-900 bg-opacity-40 lg:bg-transparent">
+      <div className="text-3xl font-semibold text-harmony font-koulen">
         <Link href="/">HARMONY</Link>
       </div>
       <div className="flex gap-4 items-center">
       <Link href="/chat">
         <span title="New Chat">
-          <MessageCircle size={28} strokeWidth={1.5} className="text-white hover:text-green-400 transition" />
-          
+          <MessageCircle size={28} strokeWidth={1.5} className="text-harmony  transition cursor-pointer" />
         </span>
       </Link>
       <Link href="/chat-history">
         <span title="History">
-          <History size={28} strokeWidth={1.5} className="text-white hover:text-green-400 transition" />
+          <History size={28} strokeWidth={1.5} className="text-harmony transition cursor-pointer" />
         </span>
       </Link>
       <button onClick={toggleProfile} className="focus:outline-none">
         <span title="Profile">
-          <UserCircle size={34} strokeWidth={1.5} className="text-white hover:text-green-400 transition" />
+          <UserCircle size={34} strokeWidth={1.5} className="text-harmony transition cursor-pointer" />
         </span>
       </button>
     </div>
@@ -73,9 +72,9 @@ const Navbar = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="bg-gray-800 text-white max-w-sm mx-auto rounded-lg shadow-lg">
           <DialogHeader>
-            <DialogTitle className="text-center text-3xl">Profile</DialogTitle>
+            <DialogTitle className="text-center text-3xl font-julius">Profile</DialogTitle>
           </DialogHeader>
-          <div className="flex flex-col items-center p-4">
+          <div className="flex flex-col items-center p-4 font-julius">
             <Image
               src="/avatar.png"
               alt="User Avatar"
