@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
+import API_BASE_URL from "@/config/api.js";
+
 
 const KeepAlive = () => {
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
-        await fetch("https://medgurubackend.onrender.com");
+        await fetch(`${API_BASE_URL}/api/keep-alive`);
         console.log("Keep-alive ping sent");
       } catch (error) {
         console.error("Error pinging server:", error);

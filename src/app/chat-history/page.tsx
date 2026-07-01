@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HistoryTab from "@/components/HistoryTab";
 import DataFromJWT from "@/utils/DataFromJWT";
+import API_BASE_URL from "@/config/api.js";
 
 const ChatHistoryPage = () => {
   interface ChatMessage {
@@ -44,7 +45,7 @@ const ChatHistoryPage = () => {
           return;
         }
 
-        const response = await fetch(`https://medgurubackend.onrender.com/api/chat/history/${user.id}`);
+        const response = await fetch(`${API_BASE_URL}/api/chat/history/${user.id}`);
         const data = await response.json();
 
         setChatHistory({

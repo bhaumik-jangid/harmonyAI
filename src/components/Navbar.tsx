@@ -8,6 +8,7 @@ import DataFromJWT from "@/utils/DataFromJWT";
 import { MessageCircle, History, UserCircle } from "lucide-react";
 import Image from "next/image";
 import toast from "react-hot-toast";
+import API_BASE_URL from "@/config/api.js";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
     const toastId = toast.loading("Logging out...");
   
     try {
-      const response = await fetch("https://medgurubackend.onrender.com/api/user/logout", {
+      const response = await fetch(`${API_BASE_URL}/api/user/logout`, {
         method: "GET",
         credentials: "include",
       });

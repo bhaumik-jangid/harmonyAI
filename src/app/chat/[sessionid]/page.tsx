@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Chatbox from "@/components/ChatBox";
 import Navbar from "@/components/Navbar";
 import DataFromJWT from "@/utils/DataFromJWT";
+import API_BASE_URL from "@/config/api.js";
 
 const ChatPage = () => {
   const pathname = usePathname();
@@ -55,7 +56,7 @@ const ChatPage = () => {
     const fetchChatHistory = async () => {
       try {
         const response = await fetch(
-          `https://medgurubackend.onrender.com/api/chat/history/${userId}/${sessionId}`
+          `${API_BASE_URL}/api/chat/history/${userId}/${sessionId}`
         );
         const data = await response.json();
         if (data.success && data.history.length > 0 && data.history[0].messages.length > 0) {
@@ -95,7 +96,7 @@ const ChatPage = () => {
 
       try {
         const response = await fetch(
-          `https://medgurubackend.onrender.com/api/chat/${userId}/${sessionId || "new"}`,
+          `${API_BASE_URL}/api/chat/${userId}/${sessionId || "new"}`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

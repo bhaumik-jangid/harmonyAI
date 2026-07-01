@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import API_BASE_URL from "@/config/api.js";
 
 interface HistoryTabProps {
   utc: string;
@@ -30,7 +31,7 @@ const HistoryTab: React.FC<HistoryTabProps> = ({ utc, userid, sessionid, userPro
 
     try {
       const response = await fetch(
-        `https://medgurubackend.onrender.com/api/chat/history/${userid}/${sessionid}`,
+        `${API_BASE_URL}/api/chat/history/${userid}/${sessionid}`,
         { method: "DELETE" }
       );
 

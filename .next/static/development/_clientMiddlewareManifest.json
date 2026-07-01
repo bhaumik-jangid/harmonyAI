@@ -1,18 +1,18 @@
 [
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat(\\\\.json)?[\\/#\\?]?$",
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
     "originalSource": "/chat"
   },
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
     "originalSource": "/chat/:path*"
   },
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat-history(\\\\.json)?[\\/#\\?]?$",
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/chat-history(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
     "originalSource": "/chat-history"
   },
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/signin(\\\\.json)?[\\/#\\?]?$",
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/signin(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
     "originalSource": "/signin"
   }
 ]

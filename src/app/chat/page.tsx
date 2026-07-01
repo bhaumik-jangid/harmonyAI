@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import Chatbox from "@/components/ChatBox";
 import Navbar from "@/components/Navbar";
 import DataFromJWT from "@/utils/DataFromJWT";
+import API_BASE_URL from "@/config/api.js";
 
 const ChatPage = () => {
   const router = useRouter();
@@ -61,7 +62,7 @@ const ChatPage = () => {
     ]);
 
     try {
-      const response = await fetch(`https://medgurubackend.onrender.com/api/chat/${userId}/${newSessionId}`, {
+      const response = await fetch(`${API_BASE_URL}/api/chat/${userId}/${newSessionId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userMessage: userInput }),
