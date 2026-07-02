@@ -26,7 +26,6 @@ export default function AuthForm() {
       ? `${API_BASE_URL}/api/user/signup`
       : `${API_BASE_URL}/api/user/signin`;
 
-      console.log("Submitting form data:", formData);
     const payload = isSignup
       ? formData
       : { email: formData.email, password: formData.password };
